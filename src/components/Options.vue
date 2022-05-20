@@ -17,7 +17,6 @@ export default {
 
 <style lang="scss" scoped>
 .options {
-  position: relative;
   background-color: #FFFEFB;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   border-radius: 4px;

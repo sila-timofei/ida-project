@@ -25,7 +25,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .products-list-view__title {
   font-style: normal;
   font-weight: 600;
