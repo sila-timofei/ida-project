@@ -33,6 +33,16 @@ export default {
   min-width: 332px;
   display: flex;
   flex-direction: column;
+
+  @media screen and (max-width: 640px) {
+    min-width: 50%;
+  }
+
+  @media screen and (max-width: 560px) {
+    min-width: 100%;
+    position: static;
+    margin-bottom: 68px;
+  }
 }
 
 .form__field {

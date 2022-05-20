@@ -1,5 +1,7 @@
 <template>
-  <products-list-view />
+  <div class="container">
+    <products-list-view />
+  </div>
 </template>
 
 <script>
@@ -23,5 +25,15 @@ export default {
 
 body {
   font-family: 'Source Sans Pro', sans-serif;
+}
+
+.container {
+  max-width: 1440px;
+  margin: auto;
+  padding: 0 32px;
+
+  @media screen and (max-width: 940px) {
+    padding: 0 15px;
+  }
 }
 </style>
