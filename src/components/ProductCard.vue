@@ -82,26 +82,17 @@ export default {
   background-repeat: no-repeat;
   opacity: 0;
   transition: 0.2s;
+
+  @media screen and (max-width: 940px) {
+    opacity: 1;
+  }
 }
 
 .product-card__btn-delete:hover {
   background-color: #ff6464;
 }
 
-.product-card__btn-delete:active {
-  width: 28px;
-  height: 28px;
-  background-size: 52%;
-  border-radius: 50%;
-}
-
 .product-card:hover .product-card__btn-delete {
   opacity: 1;
-}
-
-@media screen and (max-width: 940px) {
-  .product-card__btn-delete {
-    opacity: 1;
-  }
 }
 </style>

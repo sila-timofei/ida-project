@@ -12,7 +12,7 @@
     <div class="form__field-label">Цена товара</div>
     <input type="text" class="form__field" placeholder="Введите цену">
 
-    <button type="button" class="form__btn-send">Добавить товар</button>
+    <button type="button" class="form__btn-send form__btn-send_active">Добавить товар</button>
   </form>
 </template>
 
@@ -36,6 +36,7 @@ export default {
 
   @media screen and (max-width: 640px) {
     min-width: 50%;
+    padding: 16px;
   }
 
   @media screen and (max-width: 560px) {
@@ -124,9 +125,12 @@ export default {
   background-color: #5ca84b;
 }
 
-@media screen and (max-width: 640px) {
-  .form {
-    padding: 16px;
-  }
+.form__btn-send_active:focus:not(:active) {
+  box-shadow: 0 0 0 0.125em rgb(92, 168, 75);
+}
+
+.form__btn-send_active:focus {
+  border-color: transparent;
+  color: #fff;
 }
 </style>

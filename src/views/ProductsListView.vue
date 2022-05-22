@@ -8,7 +8,6 @@
       <products-list />
       <options class="products-list-view__options" />
     </div>
-
   </div>
 </template>
 
@@ -38,37 +37,31 @@ export default {
 .products-list-view__content {
   display: flex;
   align-items: flex-start;
+
+  @media screen and (max-width: 560px) {
+    flex-direction: column;
+  }
 }
 
 .products-list-view__container-list {
   position: relative;
+
+  @media screen and (max-width: 640px) {
+    width: 50%;
+  }
+
+  @media screen and (max-width: 560px) {
+    width: 100%;
+  }
 }
 
 .products-list-view__options {
   position: absolute;
   right: 0;
   top: -52px;
-}
 
-
-@media screen and (max-width: 640px) {
-  .products-list-view__container-list {
-    width: 50%;
-  }
-}
-
-@media screen and (max-width: 560px) {
-  .products-list-view__content {
-    flex-direction: column;
-  }
-
-  .products-list-view__container-list {
-    width: 100%;
-  }
-
-  .products-list-view__options {
+  @media screen and (max-width: 560px) {
     left: 0;
   }
 }
-
 </style>
