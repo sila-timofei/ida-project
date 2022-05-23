@@ -1,7 +1,7 @@
 <template>
   <h1 class="products-list-view__title">Добавление товара</h1>
 
-  <div class="products-list-view__content">
+  <div class="products-list-view">
     <add-product-form />
 
     <div class="products-list-view__container-list">
@@ -34,34 +34,34 @@ export default {
   margin: 32px 0 16px 0;
 }
 
-.products-list-view__content {
+.products-list-view {
   display: flex;
   align-items: flex-start;
 
   @media screen and (max-width: 560px) {
     flex-direction: column;
   }
-}
 
-.products-list-view__container-list {
-  position: relative;
+  &__container-list {
+    position: relative;
 
-  @media screen and (max-width: 640px) {
-    width: 50%;
+    @media screen and (max-width: 640px) {
+      width: 50%;
+    }
+
+    @media screen and (max-width: 560px) {
+      width: 100%;
+    }
   }
 
-  @media screen and (max-width: 560px) {
-    width: 100%;
-  }
-}
+  &__options {
+    position: absolute;
+    right: 0;
+    top: -52px;
 
-.products-list-view__options {
-  position: absolute;
-  right: 0;
-  top: -52px;
-
-  @media screen and (max-width: 560px) {
-    left: 0;
+    @media screen and (max-width: 560px) {
+      left: 0;
+    }
   }
 }
 </style>
